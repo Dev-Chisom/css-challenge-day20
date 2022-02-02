@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload images</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="title">Upload layered source file</h1>
+      <p class="subtitle">
+        Please upload the layered source file of your design
+      </p>
+      <div class="download">
+        <img src="./images/dropbox.svg" alt="..." class="dowload__img" />
+        <p class="download__title">
+          Drag and drop to upload the layered source file or
+        </p>
+        <div class="download__file-input">
+          <input type="file" id="file" class="download__file--input" />
+          <label for="file" class="download__file--label">
+            Browse Computer
+          </label>
+          <p class="download__file--name"></p>
+        </div>
+        <div class="download__list">
+          <p class="download__item">
+            <span class="dot">.</span> You can upload Sketch, Studio, Figma, Adobe XD,
+            Photoshop
+          </p>
+          <p class="download__item"><span class="dot">.</span> Maximum file size is 10MB</p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const file = document.querySelector("#file");
+      file.addEventListener("change", (e) => {
+        // Get the selected file
+        const [file] = e.target.files;
+        // Get the file name and size
+        const { name: fileName, size } = file;
+        // Convert size in bytes to kilo bytes
+        const fileSize = (size / 1000).toFixed(2);
+        // Set the text content
+        const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+        document.querySelector(".download__file--name").textContent = fileNameAndSize;
+      });
+    </script>
+  </body>
+</html>

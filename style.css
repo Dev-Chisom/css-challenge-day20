@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Mulish:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 90vw;
+  text-align: center;
+  padding: 6rem 3rem;
+  background: #ffffff;
+  box-shadow: 0px 22px 45px -15px rgba(177, 177, 223, 0.7);
+  border-radius: 15px;
+  margin: 0 auto;
+}
+.title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.2em;
+  text-align: center;
+  color: #202142;
+  margin-bottom: 1.2rem;
+}
+.subtitle {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+.download {
+  background: #fcfcff;
+  border: 3px dashed #a4a4cb;
+  box-sizing: border-box;
+  border-radius: 15px;
+  position: relative;
+  padding: 4rem;
+}
+.dowload__img {
+  width: 4.8rem;
+  height: 4.8rem;
+  object-fit: contain;
+  margin: 2rem auto;
+}
+.download__title {
+  font-family: mulish;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  color: #000;
+}
+input:hover + label,
+input:focus + label {
+  transform: scale(1.02);
+}
+.download__file--input {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+.download__file--label {
+  font-family: Poppins;
+  font-weight: 500;
+  border: 1px solid #a4a4cb;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  position: relative;
+  z-index: 5;
+}
+.download__file--name {
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+.download__item {
+  font-family: Poppins;
+  font-size: 16px;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.download__item .dot{
+    font-size: 2rem;
+    font-weight: 600;
+    padding-right: 0.4rem
+}
+@media screen and (max-width: 490px) {
+    .download__file--label{
+        padding: 1.5rem 2rem;
+    }
+    .download{
+        padding: 2rem;
+    }
+  }
+  
