@@ -8,7 +8,7 @@
   width: 100%;
   max-width: 90vw;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 4rem 3rem;
   background: #ffffff;
   box-shadow: 0px 22px 45px -15px rgba(177, 177, 223, 0.7);
   border-radius: 15px;
@@ -63,9 +63,9 @@ input:focus + label {
   font-family: Poppins;
   font-weight: 500;
   border: 1px solid #a4a4cb;
-  padding: 1.5rem 3rem;
+  padding: 1rem 2rem;
   display: inline-block;
-  border-radius: 1rem;
+  border-radius: .8rem;
   margin-bottom: 3rem;
   cursor: pointer;
   transition: transform 0.2s ease-out;
@@ -92,9 +92,6 @@ input:focus + label {
     padding-right: 0.4rem
 }
 @media screen and (max-width: 490px) {
-    .download__file--label{
-        padding: 1.5rem 2rem;
-    }
     .download{
         padding: 2rem;
     }
